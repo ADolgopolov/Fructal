@@ -1,9 +1,7 @@
 window.onload = function () {
     "use strict";
     lnk1.onclick = btnDown;
-    lnk2.onclick = btnDown;
     lnk3.onclick = btnDown;
-    lnk4.onclick = btnDown;
     lnk5.onclick = btnDown;
     lnk6.onclick = btnDown;
 }

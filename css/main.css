@@ -18,13 +18,7 @@ BODY {
 }
 
 .anchorBlock {
-    height: 80px;
-}
-
-.block-padding {
-    padding: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 70px;
 }
 
 .navbar-toggler,
@@ -106,10 +100,6 @@ BODY {
     background-color: var(--orang-color);
 }
 
-.btn-long {
-    width: 300px !important;
-}
-
 .whiteGradient {
     background-color: var(--backg-color);
     background: linear-gradient(to top, var(--backg-color) 0%, var(--white-color) 36%, var(--backg-color) 100%);
@@ -154,7 +144,7 @@ BODY {
 }
 
 .slide3 {
-    background-color: #fecfd5;
+    background-color: #e09cf8;
 }
 
 .slidesSettings {
@@ -170,8 +160,8 @@ BODY {
     margin-top: 40px;
 }
 
-.smallTextOnSlide {
-    padding-top: 12px;
+.minMargin {
+    margin-top: -20px;
 }
 
 .carousel-caption {
@@ -202,9 +192,11 @@ BODY {
     .smallText {
         font-size: 18px;
     }
+}
 
+@media (min-width: 1200px) {
     .orang {
-        font-size: 50px;
+        font-size: 28px;
     }
 }
 
@@ -215,13 +207,10 @@ BODY {
 
 .white {
     color: var(--white-color);
-    text-shadow: none;
 }
 
 .whiteBullet {
-    background-color: var(--white-color);
-    width: 20px;
-    height: 20px;
+    font-size: 26px !important;
 }
 
 .green {
@@ -243,7 +232,7 @@ BODY {
 
 .yellow {
     background-color: var(--orang-color);
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
 .y_topOffset {
@@ -255,10 +244,11 @@ BODY {
 }
 
 .startHDG {
-    background-image: url(../images/8_quote/hdg.png);
-    background-repeat: no-repeat;
-    background-size: 28px auto;
-    background-position: right top;
+    margin-left: -60px;
+}
+
+.spaceHDG {
+    padding-left: 50px;
 }
 
 .orangText {
@@ -326,4 +316,8 @@ BODY {
 
 .mark2 {
     background-color: rgba(0, 118, 45, 0.377);
+}
+
+.smallTextOnSlide {
+    text-shadow: 0px 0px 6px rgb(250, 248, 238);
 }
