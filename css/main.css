@@ -4,11 +4,11 @@
     --black-color: #242426;
     --white-color: #FFFFFF;
     --green-color: #399238;
-    --muted-color: #83898C;
+    --muted-color: #333333;
 }
 
 BODY {
-    color: var(--black-color);
+    color: var(--muted-color);
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -16,6 +16,7 @@ BODY {
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 }
+
 
 .anchorBlock {
     height: 70px;
@@ -42,17 +43,14 @@ BODY {
     margin: 0px 10px;
 }
 
-.text-muted {
-    font-size: 18px;
-}
-
 .btn-mainMenu {
+    margin-top: 8px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 30px;
     color: var(--white-color);
-    width: 132px;
-    height: 48px;
+    width: 90px;
+    height: 42px;
     background-color: var(--orang-color);
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -72,26 +70,6 @@ BODY {
     border-radius: 34px;
 }
 
-.btn-transparent {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    color: var(--orang-color);
-    width: 179px;
-    height: 48px;
-    background-color: var(--backg-color);
-    border: 2;
-    border-color: var(--orang-color);
-    border-radius: 34px;
-}
-
-.btn-transparent:hover,
-.btn-transparent:focus {
-    color: var(--black-color);
-    border-color: var(--orang-color);
-}
-
-
 .btn-orangLight:hover,
 .btn-orangLight:focus,
 .btn-mainMenu:hover,
@@ -102,37 +80,32 @@ BODY {
 
 .whiteGradient {
     background-color: var(--backg-color);
-    background: linear-gradient(to top, var(--backg-color) 0%, var(--white-color) 36%, var(--backg-color) 100%);
+    background: linear-gradient(to top, var(--backg-color) 0%, var(--white-color) 60%, var(--backg-color) 100%);
 }
 
-.bigText {
-    /* Фрукти та ягоди нового покоління */
-    font-family: 'Nunito', sans-serif;
-
+h1 {
     font-size: 35px;
     font-weight: 700;
     line-height: 100%;
-
-    color: var(--black-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.smallText {
-    /* Вашому організму потрібні цілі і натуральні фрукти, а не добавки та вітаміни! */
-
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: var(--muted-color);
+@media (min-width: 576px) {
+    h1 {
+        font-size: 60px;
+    }
 }
 
-.smallTitle {
+h2 {
     width: 100%;
     font-weight: 700;
     font-size: 26px;
-    color: var(--black-color);
+}
+
+.size_h2 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 26px;
 }
 
 .slide1 {
@@ -161,7 +134,7 @@ BODY {
 }
 
 .minMargin {
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 .carousel-caption {
@@ -180,75 +153,63 @@ BODY {
     text-shadow: none;
 }
 
-@media (min-width: 576px) {
-    .firstBlock {
-        padding-top: 70px;
-    }
-
-    .bigText {
-        font-size: 60px;
-    }
-
-    .smallText {
-        font-size: 18px;
-    }
-}
-
 @media (min-width: 1200px) {
     .orang {
         font-size: 28px;
     }
-}
 
-#blockWithPersents {
-    background-image: url(../images/3/leaf_shadow.png);
-    background-repeat: no-repeat;
+    #blockWithPersents {
+        background-image: url(../images/3/leaf_shadow.png);
+        background-repeat: no-repeat;
+    }
 }
 
 .white {
     color: var(--white-color);
 }
 
-.whiteBullet {
+.bullet {
     font-size: 26px !important;
 }
 
-.green {
+#green-block {
+    color: var(--white-color);
     background-color: var(--green-color);
-    border-radius: 50px;
+    border-radius: 40px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 60px;
+    margin-bottom: -140px;
+    padding-bottom: 120px;
 }
 
-.topOffset {
+.green_imgMoveUp {
     margin-top: -70px;
-}
-
-.bottomOffset {
-    margin-top: 50px;
 }
 
 .topOffset_bigPlate {
     margin-top: -90px;
 }
 
-.yellow {
+#yellow-block {
+    color: var(--white-color);
     background-color: var(--orang-color);
     border-radius: 40px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 100px;
 }
 
-.y_topOffset {
-    margin-top: -190px;
-}
-
-.y_bottomOffset {
-    margin-top: 180px;
+.yellow_imgMoveUp {
+    margin-top: -100px;
 }
 
 .startHDG {
-    margin-left: -60px;
+    margin-left: -50px;
 }
 
 .spaceHDG {
-    padding-left: 50px;
+    padding-left: 52px;
 }
 
 .orangText {
@@ -310,14 +271,27 @@ BODY {
     color: var(--white-color) !important;
 }
 
-.mark {
-    background-color: rgba(242, 118, 46, 0.5);
-}
-
-.mark2 {
-    background-color: rgba(0, 118, 45, 0.377);
+.modal-content {
+    background-color: var(--backg-color);
 }
 
 .smallTextOnSlide {
     text-shadow: 0px 0px 6px rgb(250, 248, 238);
+}
+
+#footerButt {
+    background-image: linear-gradient(to top, rgba(250, 248, 238, 1), rgba(250, 248, 238, 0));
+}
+
+#footerOpen {
+    height: 40px;
+}
+
+#footerClose {
+    height: 8px;
+    background-color: var(--backg-color);
+}
+
+figcaption {
+    color: var(--backg-color);
 }
